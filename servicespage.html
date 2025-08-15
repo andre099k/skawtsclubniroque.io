@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scouts Club - Services</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+  }
+
+  /* Header */
+  header {
+    background-color: #31572c; /* Dark scout green */
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 30px;
+  }
+  header p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  /* Services section */
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .service-card {
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-top: 5px solid #4f772d;
+    transition: transform 0.2s ease;
+  }
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  .service-card h3 {
+    color: #4f772d;
+    margin-top: 0;
+  }
+  .service-card p {
+    line-height: 1.5;
+  }
+
+  /* Back button */
+  .back-home {
+    text-align: center;
+    margin: 25px 0;
+  }
+  .back-home a {
+    background-color: #4f772d;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  .back-home a:hover {
+    background-color: #31572c;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Our Services</h1>
+  <p>Helping our community through skills, support, and teamwork</p>
+</header>
+
+<section class="services-container">
+  <div class="service-card">
+    <h3>Outdoor Survival Training</h3>
+    <p>We teach essential outdoor skills such as navigation, shelter building, and fire-making to help scouts become confident in nature.</p>
+  </div>
+
+  <div class="service-card">
+    <h3>Community Volunteering</h3>
+    <p>Our members participate in community cleanups, charity drives, and outreach programs to make a positive impact.</p>
+  </div>
+
+  <div class="service-card">
+    <h3>Leadership Development</h3>
+    <p>Through group activities, project management, and peer mentoring, scouts build strong leadership and teamwork skills.</p>
+  </div>
+
+  <div class="service-card">
+    <h3>Environmental Education</h3>
+    <p>We promote sustainability and conservation through workshops, eco-camps, and environmental awareness campaigns.</p>
+  </div>
+</section>
+
+<div class="back-home">
+  <a href="file:///C:/Users/Admin/Desktop/index.html">← Back to Home</a>
+</div>
+
+</body>
+</html>

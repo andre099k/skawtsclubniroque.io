@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Registration Form</title>
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #3f87a6, #ebf8e1);
+    padding: 30px;
+  }
+
+  .form-container {
+    background: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .form-group {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+    color: #34495e;
+  }
+
+  input[type="text"], input[type="date"], select {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+
+  input[type="text"]:focus, input[type="date"]:focus {
+    border-color: #3f87a6;
+  }
+
+  .radio-group, .checkbox-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+
+  .radio-group label, .checkbox-group label {
+    font-weight: normal;
+  }
+
+  button {
+    margin-top: 25px;
+    background-color: #3f87a6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+  }
+
+  button:hover {
+    background-color: #356d85;
+  }
+</style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Registration Form</h2>
+
+    <form action="page3.html" method="POST">
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" name="lastname" required placeholder="Enter last name" />
+        </div>
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" name="firstname" required placeholder="Enter first name" />
+        </div>
+        <div class="form-group" style="max-width: 80px;">
+          <label for="mi">M.I.</label>
+          <input type="text" id="mi" name="mi" maxlength="2" placeholder="MI" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required placeholder="Enter your address" />
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="birthdate">Birthdate</label>
+          <input type="date" id="birthdate" name="birthdate" required />
+        </div>
+        <div class="form-group">
+          <label for="birthplace">Birthplace</label>
+          <input type="text" id="birthplace" name="birthplace" required placeholder="Birthplace" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Civil Status</label>
+        <div class="radio-group">
+          <label><input type="radio" name="civil_status" value="Single" required /> Single</label>
+          <label><input type="radio" name="civil_status" value="Married" /> Married</label>
+          <label><input type="radio" name="civil_status" value="Widowed" /> Widowed</label>
+          <label><input type="radio" name="civil_status" value="Divorced" /> Divorced</label>
+          <label><input type="radio" name="civil_status" value="Separated" /> Separated</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="Male" required /> Male</label>
+          <label><input type="radio" name="gender" value="Female" /> Female</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Skills (Type any skill you have)</label>
+        <div class="form-row">
+          <input type="text" name="skill1" placeholder="Skill 1" />
+          <input type="text" name="skill2" placeholder="Skill 2" />
+          <input type="text" name="skill3" placeholder="Skill 3" />
+          <input type="text" name="skill4" placeholder="Skill 4" />
+        </div>
+      </div>
+
+     <a href="index.html"><button type="submit">Next</button></a>
+    </form>
+  </div>
+</body>
+</html>
